@@ -1,0 +1,74 @@
+Achievement Number: 1
+Achivement Name: The Basics
+Achievement Description: You moved. Amazing accomplishment. I mean, the first achievement is always the hardest.
+Achivement Trigger: Hitting the space, up arrow, down arrow, left arrow, right arrow, w, a, s, or d key in any of the levels.
+
+Achievement Number: 2
+Achivement Name: Novice
+Achievement Description: This isn't that hard to do. It's not TITOL. So far, you've just had to move right. But then again, you can only move 4 directions (or a combination of them). So far. 
+Achivement Trigger: Having one levelCleared bool set to true.
+
+Achievement Number: 3
+Achivement Name: New Heights
+Achievement Description: You jumped a few dozen pixels. After all, you can't be overweight in this game. Oh wait, how small is a pixel again?
+Achivement Trigger: Hitting the space, up arrow, or w key in any of the levels.
+
+Achievement Number: 4
+Achivement Name: Beginner
+Achievement Description: Well, the second level was barely harder than the first. It's literally just a change in the y-position of the level clear area.
+Achivement Trigger: Having two levelCleared bools set to true.
+
+Achievement Number: 6
+Achivement Name: Platformer
+Achievement Description: I mean, there's a reason why this game is in the 'Platformer' genre. I wonder why, maybe you can figure that out.
+Achivement Trigger: Colliding with the top of a platform.
+
+Achievement Number: 7
+Achivement Name: Apprentice
+Achievement Description: Well, you've completed the first 5 levels. To be honest, they're some of the easiest I've seen, and they can possibly 
+Achivement Trigger: Having five levelCleared bools set to true.
+
+Achievement Number: 8
+Achivement Name: Competent
+Achievement Description: Wow, double digits. If you continue at this rate, you're gonna reach triple digits...in never. Level 28 still stands before you.
+Achivement Trigger: Having ten levelCleared bools set to true.
+
+Achievement Number: 9
+Achivement Name: Intermediate
+Achievement Description: 8 levels off. To be honest, 28 levels completed is larger of a milestone. If you've gotten the next achievement, you're either trash at the game or know what stands before you. In which case, you're still trash at the game.
+Achivement Trigger: Having 20 levelCleared bools set to true.
+
+Achievement Number: 11
+Achivement Name: Advanced
+Achievement Description: You've passed the largest hurdle yet. After that, Level 29 and 30 should have felt like a breeze relative to Level 28. Maybe Level 29 not so much, but still. Well, I can't foreshadow anymore. Or can I?
+Achivement Trigger: Having 30 levelCleared bools set to true.
+
+Achievement Number: 12
+Achivement Name: Expert
+Achievement Description: 40 whole levels. As of when this was typed, the game only has 42 levels. 2 more to go, and they are easy compared to the rest. But still tedious.
+Achivement Trigger: Having 40 levelCleared bools set to true.
+
+Achievement Number: S1
+Achivement Name: Informed
+Achievement Description: You looked at the tutorial. No one does that. Until they find out that there's an achievement associated with it, of course.
+Achivement Trigger: Have the level set to any of the tutorial screens.
+
+Achievement Number: S2
+Achivement Name: Exit From Hell
+Achievement Description: You exited the game. Good job. Although, if you didn't come back, there's no point.
+Achivement Trigger: Initiate a mousePress while hovering over the exitButton.
+
+Achievement Number: S3
+Achivement Name: Useless Heights
+Achievement Description: You jumped in the first level. Why? What made you do that? It literally just required you to move right.
+Achivement Trigger: Hitting the space, up arrow, or w key in the first level.
+
+Achievement Number: S4
+Achivement Name: Incompetent
+Achievement Description: The game's literally in the 'Platformer' genre. I mean, what did you expect the game's core mechanics to be?
+Achivement Trigger: Colliding with the bottom of a platform.
+
+Achievement Number: S5
+Achivement Name: Faliure
+Achievement Description: You died. How miserable. Well, at least you're the more disappointed one, as you're gonna have to restart from Level 1. I don't even know why this is a secret achievement.
+Achivement Trigger: Having any of the levelDeath bools set to true.
