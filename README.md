@@ -35,3 +35,4 @@ The mocking text seen at the start of every level was inspired by [The World's H
 // Insert text
 
 ---
+Copyright © 2025 Monotony
