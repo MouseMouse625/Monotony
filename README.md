@@ -163,7 +163,7 @@ Do you have any suggestions, fixes, or extensions? If so, you can submit a pull 
 
 ## Credits
 
-The mocking text seen at the start of every level was inspired by [The World's Hardest Game](https://en.wikipedia.org/wiki/The_World%27s_Hardest_Game),and the minimalism in both the sound effects and aesthetics was inspired by [OCO](https://oco-game.com/).
+The mocking text seen at the start of every level was inspired by [The World's Hardest Game](https://en.wikipedia.org/wiki/The_World%27s_Hardest_Game),and the minimalism in both the sound effects and aesthetics was inspired by [OCO](https://oco-game.com/). Small parts such as the symlinks and blurs were coded and enhanced by AI, such as [DeepSeek](https://chat.deepseek.com/).
 
 ## License
 
