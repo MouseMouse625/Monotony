@@ -20,7 +20,13 @@ Made with Processing 4.4, an open-source programming language forked from Java. 
 
 ## Getting Started
 
-// Insert Text
+### Processing
+
+// Insert text
+
+### VSCode
+
+// Insert text
 
 ## Contributions
 
@@ -32,7 +38,8 @@ The mocking text seen at the start of every level was inspired by [The World's H
 
 ## License
 
-// Insert text
+This project uses the MIT License stating that the project is open source and free for anyone to use or develop. For more info, navigate to the [LICENSE.md](https://github.com/MouseMouse625/Monotony/blob/main/LICENSE.md) file.
 
 ---
+
 Copyright © 2025 Monotony
