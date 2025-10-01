@@ -42,8 +42,7 @@ Made with Processing 4.4, an open-source programming language forked from Java. 
     -   Run the game's executable file:
         -   Windows: Double-click `processingPlatformerSketch.exe`
         -   Linux: Run the `processingPlatformerSketch.x86_64` file. You may first need to make it executable using a command like `chmod +x processingPlatformerSketch.x86_64`.
-
->   Note for Windows Users: Windows might show a "Windows protected your PC" warning. If you see this, click "More info" and then "Run anyway" to launch the game.
+    >   Note for Windows Users: Windows might show a "Windows protected your PC" warning. If you see this, click "More info" and then "Run anyway" to launch the game.
 
 ### VSCode
 
@@ -126,6 +125,7 @@ Made with Processing 4.4, an open-source programming language forked from Java. 
     -   Run the following configured tasks in this order:
         -   `Run Symlink Setup`
             >   Wait for the window to close
+            >   Note: the symlinks might fail, and if this happens, make sure to run VSCode as administrator to ensure the authority of creating them
         -   `Run Blur Creation`
             >   Wait for the window to close
         -   `Run Main Sketch`
