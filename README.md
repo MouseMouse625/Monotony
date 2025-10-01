@@ -18,11 +18,32 @@ Made with Processing 4.4, an open-source programming language forked from Java. 
 - Easy navigation
 - Built-in themes
 
-## Getting Started
+## Installation
 
 ### Processing
 
-// Insert text
+1.  Navigate to the Releases Page
+    *   Navigate to the [Releases](https://github.com/MouseMouse625/Monotony/releases) section of this repository.
+
+2.  Select the Latest Release
+    *   Navigate to the latest release (e.g. v1.0.0).
+
+3.  Download the Correct File for Your OS
+    *   In the Assets section of the release, download the corresponding file for your operating system by clicking it:
+        *   Windows: `binaryWindows64.zip`
+        *   Linux: `binaryLinux64.zip`
+
+4.  Extract the ZIP File
+    *   Locate the downloaded ZIP file, probably in the downloads folder, and extract its contents. You can usually do this by right-clicking the file and selecting Extract All or using a tool like 7-Zip.
+
+5.  Run the Game
+    *   Locate and open the newly extracted folder.
+    *   Open the nested folder of the same name.
+    *   Run the game's executable file:
+        *   Windows: Double-click `processingPlatformerSketch.exe`
+        *   Linux: Run the `processingPlatformerSketch.x86_64` file. You may first need to make it executable using a command like `chmod +x processingPlatformerSketch.x86_64`.
+
+> Note for Windows Users: Windows might show a "Windows protected your PC" warning. If you see this, click "More info" and then "Run anyway" to launch the game.
 
 ### VSCode
 
