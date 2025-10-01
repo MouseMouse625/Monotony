@@ -1,7 +1,7 @@
 void setup() {
   time = 0;
   alpha = 0;
-  blockSize = displayWidth / 95;
+  blockSize = displayWidth / 96.0;
   halfBlockSize = blockSize / 2;
   blockRadius = blockSize * 0.15;
   titleSize = blockSize * 12.5;
