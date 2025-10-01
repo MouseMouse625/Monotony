@@ -51,7 +51,7 @@ Made with Processing 4.4, an open-source programming language forked from Java. 
     -   Download and install VSCode from the [official website](https://code.visualstudio.com/).
 
 2. Install Processing
-    -   Download and install Processing 4.3.4 from the [official repositorye](https://github.com/processing/processing4/releases).
+    -   Download and install Processing 4.3.4 from the [official repository](https://github.com/processing/processing4/releases).
 
         >   This is due to Processing 4.4+ not having the processing-java.exe file, and the extension hasn't been updated yet.
     -   Important: After installation, run the Processing IDE (PDE) at least once to complete its initial setup.
