@@ -50,7 +50,8 @@ Made with Processing 4.4, an open-source programming language forked from Java. 
     -   Download and install VSCode from the [official website](https://code.visualstudio.com/).
 
 2. Install Processing
-    -   Download and install Processing from the [official website](https://processing.org/download/).
+    -   Download and install Processing 4.3.4 from the [official repositorye](https://github.com/processing/processing4/releases).
+        >   This is due to Processing 4.4+ not having the processing-java.exe file, and the extension hasn't been updated yet.
     -   Important: After installation, run the Processing IDE (PDE) at least once to complete its initial setup.
 
 3. Install the Processing Extension in VSCode
@@ -85,7 +86,7 @@ Made with Processing 4.4, an open-source programming language forked from Java. 
             {
                 "label": "Run Blur Creation",
                 "type": "shell",
-                "command": "C:\\Program Files\\Processing\\app\\resources\\jdk\\bin\\java.exe",
+                "command": "C:\\Program Files\\Processing\\processing-4.3\\processing-java.exe",
                 "args": [
                     "--sketch=${workspaceFolder}/source/blurs",
                     "--run",
@@ -95,7 +96,7 @@ Made with Processing 4.4, an open-source programming language forked from Java. 
             {
                 "label": "Run Symlink Setup",
                 "type": "shell",
-                "command": "C:\\Program Files\\Processing\\app\\resources\\jdk\\bin\\java.exe",
+                "command": "C:\\Program Files\\Processing\\processing-4.3\\processing-java.exe",
                 "args": [
                     "--sketch=${workspaceFolder}/source/symlinks",
                     "--run",
@@ -105,7 +106,7 @@ Made with Processing 4.4, an open-source programming language forked from Java. 
             {
                 "label": "Run Main Sketch",
                 "type": "shell",
-                "command": "C:\\Program Files\\Processing\\app\\resources\\jdk\\bin\\java.exe",
+                "command": "C:\\Program Files\\Processing\\processing-4.3\\processing-java.exe",
                 "args": [
                     "--sketch=${workspaceFolder}/source/main",
                     "--run",
