@@ -143,6 +143,20 @@ Made with Processing 4.4, an open-source programming language forked from Java. 
             
     -   From now on, only the last command is required to run the game
 
+### Comparision
+
+VSCode Version
+-   Hard to setup
+-   Better anti-alising as it detects app scaling
+-   More optimised (less lag)
+-   Uses a slightly outdated version of Processing
+
+Processing Version
+-   Easy to setup
+-   Worse anti-aliasing due to not detecting the app scaling
+-   Less optimised due to the native IDE not being the best (more lag)
+-   Uses the most recent version of Processing
+
 ## Contributions
 
 Do you have any suggestions, fixes, or extensions? If so, you can submit a pull request on [Github](https://github.com/MouseMouse625/Monotony/).
