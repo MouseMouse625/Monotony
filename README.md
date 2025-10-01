@@ -43,7 +43,7 @@ Made with Processing 4.4, an open-source programming language forked from Java. 
         -   Windows: Double-click `processingPlatformerSketch.exe`
         -   Linux: Run the `processingPlatformerSketch.x86_64` file. You may first need to make it executable using a command like `chmod +x processingPlatformerSketch.x86_64`.
 
-> Note for Windows Users: Windows might show a "Windows protected your PC" warning. If you see this, click "More info" and then "Run anyway" to launch the game.
+>   Note for Windows Users: Windows might show a "Windows protected your PC" warning. If you see this, click "More info" and then "Run anyway" to launch the game.
 
 ### VSCode
 
