@@ -43,7 +43,7 @@ Made with Processing 4.4, an open-source programming language forked from Java. 
         -   Windows: Double-click `processingPlatformerSketch.exe`
         -   Linux: Run the `processingPlatformerSketch.x86_64` file. You may first need to make it executable using a command like `chmod +x processingPlatformerSketch.x86_64`.
 
->   Note for Windows Users: Windows might show a "Windows protected your PC" warning. If you see this, click "More info" and then "Run anyway" to launch the game.
+    >   Note for Windows Users: Windows might show a "Windows protected your PC" warning. If you see this, click "More info" and then "Run anyway" to launch the game.
 
 ### VSCode
 
@@ -51,7 +51,9 @@ Made with Processing 4.4, an open-source programming language forked from Java. 
     -   Download and install VSCode from the [official website](https://code.visualstudio.com/).
 
 2. Install Processing
-    -   Download and install Processing from the [official website](https://processing.org/download/).
+    -   Download and install Processing 4.3.4 from the [official repositorye](https://github.com/processing/processing4/releases).
+
+        >   This is due to Processing 4.4+ not having the processing-java.exe file, and the extension hasn't been updated yet.
     -   Important: After installation, run the Processing IDE (PDE) at least once to complete its initial setup.
 
 3. Install the Processing Extension in VSCode
@@ -86,7 +88,7 @@ Made with Processing 4.4, an open-source programming language forked from Java. 
             {
                 "label": "Run Blur Creation",
                 "type": "shell",
-                "command": "C:\\Program Files\\Processing\\app\\resources\\jdk\\bin\\java.exe",
+                "command": "C:\\Program Files\\Processing\\processing-4.3\\processing-java.exe",
                 "args": [
                     "--sketch=${workspaceFolder}/source/blurs",
                     "--run",
@@ -96,7 +98,7 @@ Made with Processing 4.4, an open-source programming language forked from Java. 
             {
                 "label": "Run Symlink Setup",
                 "type": "shell",
-                "command": "C:\\Program Files\\Processing\\app\\resources\\jdk\\bin\\java.exe",
+                "command": "C:\\Program Files\\Processing\\processing-4.3\\processing-java.exe",
                 "args": [
                     "--sketch=${workspaceFolder}/source/symlinks",
                     "--run",
@@ -106,7 +108,7 @@ Made with Processing 4.4, an open-source programming language forked from Java. 
             {
                 "label": "Run Main Sketch",
                 "type": "shell",
-                "command": "C:\\Program Files\\Processing\\app\\resources\\jdk\\bin\\java.exe",
+                "command": "C:\\Program Files\\Processing\\processing-4.3\\processing-java.exe",
                 "args": [
                     "--sketch=${workspaceFolder}/source/main",
                     "--run",
@@ -116,6 +118,7 @@ Made with Processing 4.4, an open-source programming language forked from Java. 
         ]
     }
     ```
+
     >   Modify the `"command"` paths in the `tasks.json` file to match the actual installation directories of `java.exe` on your computer, if you have opted for a custom installation.
 
 8. Running the Game
@@ -125,11 +128,19 @@ Made with Processing 4.4, an open-source programming language forked from Java. 
     -   After opening the `Command Palette`, type `Run Task`, then press `Enter`.
     -   Run the following configured tasks in this order:
         -   `Run Symlink Setup`
+
             >   Wait for the window to close
+
+            >   Note: the symlinks might fail, and if this happens, make sure to run VSCode as administrator to ensure the authority of creating them
+
         -   `Run Blur Creation`
+
             >   Wait for the window to close
+
         -   `Run Main Sketch`
+
             >   This is the command that runs the game
+            
     -   From now on, only the last command is required to run the game
 
 ## Contributions
