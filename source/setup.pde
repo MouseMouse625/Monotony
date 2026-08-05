@@ -114,7 +114,7 @@ void drawShapes(int themeIndex, PGraphics target) {
   }
 }
 void saveAllSections(int themeIndex) {
-  File imagesDir = new File(new File(sketchPath("")).getParentFile().getParentFile(), "data/images/sections/" + themes[themeIndex]);
+  File imagesDir = new File(new File(sketchPath("")).getParentFile(), "data/images/sections/" + themes[themeIndex]);
   if (!imagesDir.exists()) {
     imagesDir.mkdirs();
   }
@@ -161,11 +161,11 @@ void setup() {
   gravity = blockSize / 40;
   jumpStrength = -halfBlockSize;
   animationS = 0.2;
-  benchNineLight = createFont(getParentPath(2) + "data/fonts/BenchNine-Light.ttf", 32);
-  benchNineRegular = createFont(getParentPath(2) + "data/fonts/BenchNine-Regular.ttf", 32);
-  benchNineBold = createFont(getParentPath(2) + "data/fonts/BenchNine-Bold.ttf", 32);
-  hcLogo = loadImage(getParentPath(2) + "data/images/hcLogo.png");
-  somLogo = loadImage(getParentPath(2) + "data/images/somLogo.png");
+  benchNineLight = createFont(getParentPath(1) + "data/fonts/BenchNine-Light.ttf", 32);
+  benchNineRegular = createFont(getParentPath(1) + "data/fonts/BenchNine-Regular.ttf", 32);
+  benchNineBold = createFont(getParentPath(1) + "data/fonts/BenchNine-Bold.ttf", 32);
+  hcLogo = loadImage(getParentPath(1) + "data/images/hcLogo.png");
+  somLogo = loadImage(getParentPath(1) + "data/images/somLogo.png");
   somLogo.resize(930, 589);
   level = "intro";
   targetLevel = level;
@@ -481,11 +481,11 @@ void setup() {
   mountain2 = new Mountain(displayHeight * 0.7, 0.3, 0.15, mountain2Colour, 600, 2 * getLevel(level));
   mountain3 = new Mountain(displayHeight * 0.7, 0.5, 0.25, mountain3Colour, 400, 3 * getLevel(level));
   mountain4 = new Mountain(displayHeight * 0.7, 0.7, 0.35, mountain4Colour, 200, 4 * getLevel(level));
-  levelClear = new SoundFile(this, getParentPath(2) + "data/sounds/levelClear.mp3");
-  playerDeath = new SoundFile(this, getParentPath(2) + "data/sounds/playerDeath.mp3");
-  randomClick = new SoundFile(this, getParentPath(2) + "data/sounds/randomClick.mp3");
-  buttonClick = new SoundFile(this, getParentPath(2) + "data/sounds/buttonClick.mp3");
-  achievementPopup = new SoundFile(this, getParentPath(2) + "data/sounds/achievementPopup.mp3");
+  levelClear = new SoundFile(this, getParentPath(1) + "data/sounds/levelClear.mp3");
+  playerDeath = new SoundFile(this, getParentPath(1) + "data/sounds/playerDeath.mp3");
+  randomClick = new SoundFile(this, getParentPath(1) + "data/sounds/randomClick.mp3");
+  buttonClick = new SoundFile(this, getParentPath(1) + "data/sounds/buttonClick.mp3");
+  achievementPopup = new SoundFile(this, getParentPath(1) + "data/sounds/achievementPopup.mp3");
   sections = new PImage[5][8];
   achievement1 = new Achievement(1, 0, blockSize * 10.7, blockSize * 7.225, "Interesting Title", "A very interesting subtitle", true);
   achievement2 = new Achievement(2, 0, blockSize * 28.7, blockSize * 7.225, "Interesting Title", "A very interesting subtitle", true);
@@ -1695,7 +1695,7 @@ void setup() {
   level42DeathPlatforms.add(level42DeathPlatform13);
   for (int row = 0; row < 5; row++) {
     for (int col = 0; col < 8; col++) {
-      sections[row][col] = loadImage(getParentPath(2) + "data/images/sections/" + theme + File.separator + theme + "Section[" + row + "][" + col + "].png");
+      sections[row][col] = loadImage(getParentPath(1) + "data/images/sections/" + theme + File.separator + theme + "Section[" + row + "][" + col + "].png");
     }
   }
   setColours(true);

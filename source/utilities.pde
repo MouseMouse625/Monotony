@@ -126,7 +126,7 @@ void setColours(boolean initialised) {
       mountain4.rangeColor = mountain4Colour;
       for (int row = 0; row < 5; row++) {
         for (int col = 0; col < 8; col++) {
-          sections[row][col] = loadImage(getParentPath(2) + "data/images/sections/" + theme + File.separator + theme + "Section[" + row + "][" + col + "].png");
+          sections[row][col] = loadImage(getParentPath(1) + "data/images/sections/" + theme + File.separator + theme + "Section[" + row + "][" + col + "].png");
         }
       }
     }
