@@ -1,6 +1,6 @@
 # Monotony
 
->   Platformers are supposed to have varied level styles, dynamic movement, and creative approaches to the same, core idea. Right?
+>   platformers are supposed to have varied level styles, dynamic movement, and creative approaches to the same, core idea. right?
 
 ## Description
 
@@ -20,150 +20,84 @@ Made with Processing 4.4, an open-source programming language forked from Java. 
 
 ## Installation
 
-### Processing
+### Executable
 
-1.  Navigate to the Releases Page
-    -   Navigate to the [Releases](https://github.com/MouseMouse625/Monotony/releases) section of this repository.
-
-2.  Select the Latest Release
-    -   Navigate to the latest release (e.g. v1.0.0).
-
-3.  Download the Correct File for Your OS
-    -   In the `Assets` section of the release, download the corresponding file for your operating system by clicking it:
-        -   Windows: `binaryWindows64.zip`
-        -   Linux: `binaryLinux64.zip`
-
-4.  Extract the ZIP File
-    -   Locate the downloaded ZIP file, probably in the downloads folder, and extract its contents. You can usually do this by right-clicking the file and selecting `Extract All` or using a tool like 7-Zip.
-
-5.  Run the Game
-    -   Locate and open the newly extracted folder.
-    -   Open the nested folder of the same name.
-    -   Run the game's executable file:
-        -   Windows: Double-click `processingPlatformerSketch.exe`
-        -   Linux: Run the `processingPlatformerSketch.x86_64` file. You may first need to make it executable using a command like `chmod +x processingPlatformerSketch.x86_64`.
-
-    >   Note for Windows Users: Windows might show a "Windows protected your PC" warning. If you see this, click "More info" and then "Run anyway" to launch the game.
+<ol>
+  <li>Download the latest <code>release</code> of the game for your <code>operating system</code>.
+    <ol type="a">
+      <li>This is done by navigating to the <a href="https://github.com"><code>Releases</code></a> section of this <code>repository</code>.</li>
+      <li>Find the latest <code>release</code> (such as v1.0.0).</li>
+      <li>In the <code>Assets</code> section of the release, download the corresponding <strong>file</strong> for your <code>operating system</code> by clicking it (<code>binaryWindows64.zip</code> for <code>Windows</code> and <code>binaryLinux64.zip</code> for <code>Linux</code>).</li>
+    </ol>
+  </li>
+  <li>Run the local copy of your game.
+    <ol type="a">
+      <li>Locate the downloaded <code>ZIP file</code>, probably in the <code>Downloads</code> folder and <strong>extract</strong> its <code>contents</code>. You can do this by <strong>right-clicking</strong> the <code>file</code> and selecting <code>Extract All</code> or using a tool like <code>7-Zip</code>.</li>
+      <li>Locate and open the newly <code>extracted folder</code>.</li>
+      <li>Open the <code>nested folder</code> of (probably) the same name.</li>
+      <li>
+        Run the game's executable files.
+        <br>
+        &nbsp;&nbsp;&nbsp;Windows: <strong>double-click</strong> <code>processingPlatformerSketch.exe</code>. <code>Windows</code> might show a <code>Windows protected your PC</code> warning (click <code>More info</code> and then <code>Run anyway</code> to launch the game).
+        <br>
+        &nbsp;&nbsp;&nbsp;Linux: run the file named <code>processingPlatformerSketch.x86_64</code></summary>. You may need to grant <strong>execute permissions</strong> first using <code>chmod +x processingPlatformerSketch.x86_64</code> via the <code>terminal</code>.
+      </li>
+    </ol>
+  </li>
+</ol>
 
 ### VSCode
 
-1. Install Visual Studio Code
-    -   Download and install VSCode from the [official website](https://code.visualstudio.com/).
+1. Download and install `VSCode` from the [official website](https://code.visualstudio.com).
 
-2. Install Processing
-    -   Download and install Processing 4.3.4 from the [official repository](https://github.com/processing/processing4/releases).
+2. Install `Processing` for running the actual game.
+    a. **Download** and **install** `Processing 4.5.6` from the [official website](https://processing.org).
+    b. After the installation, run the `Processing IDE` (PDE) at least once to complete its **initial setup**.
 
-        >   This is due to Processing 4.4+ not having the processing-java.exe file, and the extension hasn't been updated yet.
-    -   Important: After installation, run the Processing IDE (PDE) at least once to complete its initial setup.
+3. Install the `Processing` extension in `VSCode`.
+    a. Open `VSCode`.
+    b. Navigate to the `Extensions` tab (`Ctrl+Shift+X` for `Windows` and `Cmd+Shift+X` for `Mac`).
+    c. Search for and install the `Processing` extension by `Processing Foundation`.
 
-3. Install the Processing Extension in VSCode
-    -   Open VSCode.
-    -   Go to the Extensions view.
-        -   Press `Ctrl+Shift+X` for Windows.
-        -   Press `Cmd+Shift+X` for MacOS.
-    -    Search for and install the `Processing Language` extension by Avin Zarlez
+4. Download the `Sound` library in `Processing` (for sound effects and music).
+    a. Open the `Processing IDE`.
+    b. Go to `Sketch` > `Import Library` > `Add Library`.
+    c. In the `Library Manager`, search for `Sound` by `The Processing Foundation` and click `Install`.
 
-4. Add the Sound Library in Processing
-    -   Open the Processing IDE
-    -   Go to `Sketch` > `Import Library` > `Add Library`
-    -   In the Library Manager, search for `Sound` and click `Install`
+5. Clone the `repository` to your device.
+    a. Create a `folder` where you'd like the game to be stored (for example, `Documents/Monotony`)
+    b. Right-click the folder and select `Open in Terminal`.
+    c. Enter the command `git clone https://github.com/MouseMouse625/Monotony` to **clone** the `repository`.
 
-5. Clone the Repository
-    -   Clone this repository to your local machine, including all hidden files
-   ```bash
-   git clone https://github.com/MouseMouse625/Monotony
-   ```
-
-6. Open the Project in VSCode
-    -   Open the cloned project folder in VSCode using `File` > `Open Folder` and selecting the correct folder.
-
-7. Configure the Build Tasks
-    -   In the root of your project, create a `.vscode` folder if it doesn't exist.
-    -   Inside the `.vscode` folder, create a file named `tasks.json`.
-    -   Copy and paste the following JSON configuration into `tasks.json`:
-    ```json
-    {
-        "version": "2.0.0",
-        "tasks": [
-            {
-                "label": "Run Blur Creation",
-                "type": "shell",
-                "command": "C:\\Program Files\\Processing\\processing-4.3\\processing-java.exe",
-                "args": [
-                    "--sketch=${workspaceFolder}/source/blurs",
-                    "--run",
-                ],
-                "problemMatcher": []
-            },
-            {
-                "label": "Run Symlink Setup",
-                "type": "shell",
-                "command": "C:\\Program Files\\Processing\\processing-4.3\\processing-java.exe",
-                "args": [
-                    "--sketch=${workspaceFolder}/source/symlinks",
-                    "--run",
-                ],
-                "problemMatcher": []
-            },
-            {
-                "label": "Run Main Sketch",
-                "type": "shell",
-                "command": "C:\\Program Files\\Processing\\processing-4.3\\processing-java.exe",
-                "args": [
-                    "--sketch=${workspaceFolder}/source/main",
-                    "--run",
-                ],
-                "problemMatcher": []
-            }
-        ]
-    }
-    ```
-
-    >   Modify the `"command"` paths in the `tasks.json` file to match the actual installation directories of `java.exe` on your computer, if you have opted for a custom installation.
-
-8. Running the Game
-    -   With the `tasks.json` file configured, you need to run the setup tasks.
-        -   Press `Ctrl+Shift+P` on Windows
-        -   Press `Cmd+Shift+P` on MacOS
-    -   After opening the `Command Palette`, type `Run Task`, then press `Enter`.
-    -   Run the following configured tasks in this order:
-        -   `Run Symlink Setup`
-
-            >   Wait for the window to close
-
-            >   Note: the symlinks might fail, and if this happens, make sure to run VSCode as administrator to ensure the authority of creating them
-
-        -   `Run Blur Creation`
-
-            >   Wait for the window to close
-
-        -   `Run Main Sketch`
-
-            >   This is the command that runs the game
-            
-    -   From now on, only the last command is required to run the game
+6. Running the game in `VSCode`.
+    a. Open the `cloned folder` in `VSCode` by going to `File` > `Open Folder` and selecting the correct `folder`.
+    b. Press the `play` button in the **top-right hand corner** of the screen while having any of the `.pde files` open.
 
 ### Comparision
 
 VSCode Version
--   Hard to setup
+-   Harder to setup
 -   Better anti-alising as it detects app scaling
 -   More optimised (less lag)
--   Uses a slightly outdated version of Processing
 
 Processing Version
--   Easy to setup
--   Worse anti-aliasing due to not detecting the app scaling
+-   Easier to setup
+-   Worse anti-aliasing due to unability to detect app scaling
 -   Less optimised due to the native IDE not being the best (more lag)
--   Uses the most recent version of Processing
 
 ## Contributions
 
-Do you have any suggestions, fixes, or extensions? If so, you can submit a pull request on [Github](https://github.com/MouseMouse625/Monotony/).
+Do you have any suggestions, fixes, or extensions? If so, you can submit a pull request on [Github](https://github.com/MouseMouse625/Monotony).
 
 ## Credits
 
-The mocking text seen at the start of every level was inspired by [The World's Hardest Game](https://en.wikipedia.org/wiki/The_World%27s_Hardest_Game),and the minimalism in both the sound effects and aesthetics was inspired by [OCO](https://oco-game.com/). Small parts such as the symlinks and blurs were coded and enhanced by AI, such as [DeepSeek](https://chat.deepseek.com/).
+- [`HCB`](https://hackclub.com) for hosting this whole thing
+    - [`Stardance`](https://stardance.hackclub.com) for running an actual summer event
+- [`The World's Hardest Game`](https://en.wikipedia.org/wiki/The_World%27s_Hardest_Game) for the mocking remarks
+- [`OCO`](https://oco-game.com) for the minimalism in both the aesthetics and sound effects
+- [`VSCode`](https://code.visualstudio.com) and [`Processing`](https://processing.org) for making the coding part of all of this possible
+- [`DeepSeek`](https://chat.deepseek.com) for enhancing small parts of the game (such as symlinks, blurs and the parallax effect)
+- [`Google`](https://www.google.com) for acting as a universal search engine for all of my dumb queries
 
 ## License
 
