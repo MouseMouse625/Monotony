@@ -166,7 +166,7 @@ int getLevel(String levelString) {
   }
 }
 int getTheme(String themeString) {
-  switch(theme) {
+  switch(themeString) {
     case "cyberpunk":
       return 0;
     case "light":
