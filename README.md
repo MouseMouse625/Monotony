@@ -46,44 +46,77 @@ Made with Processing 4.4, an open-source programming language forked from Java. 
   </li>
 </ol>
 
-### VSCode
+### Codebase
 
-1. Download and install `VSCode` from the [official website](https://code.visualstudio.com).
-
-2. Install `Processing` for running the actual game.
-    a. **Download** and **install** `Processing 4.5.6` from the [official website](https://processing.org).
-    b. After the installation, run the `Processing IDE` (PDE) at least once to complete its **initial setup**.
-
-3. Install the `Processing` extension in `VSCode`.
-    a. Open `VSCode`.
-    b. Navigate to the `Extensions` tab (`Ctrl+Shift+X` for `Windows` and `Cmd+Shift+X` for `Mac`).
-    c. Search for and install the `Processing` extension by `Processing Foundation`.
-
-4. Download the `Sound` library in `Processing` (for sound effects and music).
-    a. Open the `Processing IDE`.
-    b. Go to `Sketch` > `Import Library` > `Add Library`.
-    c. In the `Library Manager`, search for `Sound` by `The Processing Foundation` and click `Install`.
-
-5. Clone the `repository` to your device.
-    a. Create a `folder` where you'd like the game to be stored (for example, `Documents/Monotony`)
-    b. Right-click the folder and select `Open in Terminal`.
-    c. Enter the command `git clone https://github.com/MouseMouse625/Monotony` to **clone** the `repository`.
-
-6. Running the game in `VSCode`.
-    a. Open the `cloned folder` in `VSCode` by going to `File` > `Open Folder` and selecting the correct `folder`.
-    b. Press the `play` button in the **top-right hand corner** of the screen while having any of the `.pde files` open.
+<ol>
+  <li>Download and install <code>VSCode</code> from the <a href="https://code.visualstudio.com">official website</a>.</li>
+  <li>Install <code>Processing</code> for running the actual game.
+    <ol type="a">
+      <li>Download and install <code>Processing 4.5.6</code> from the <a href="https://processing.org">official website</a>.</li>
+      <li>After the installation, run the <code>Processing IDE</code> (PDE) at least once to complete its <strong>initial setup</strong>.</li>
+    </ol>
+  </li>
+  <li>Install the <code>Processing</code> extension in <code>VSCode</code>.
+    <ol type="a">
+      <li>Open <code>VSCode</code>.</li>
+      <li>Navigate to the <code>Extensions</code> tab (<code>Ctrl+Shift+X</code> for <code>Windows</code> and <code>Cmd+Shift+X</code> for <code>Mac</code>).</li>
+      <li>Search for and install the <code>Processing</code> extension by <code>Processing Foundation</code>.</li>
+    </ol>
+  </li>
+  <li>Download the <code>Sound</code> library in <code>Processing</code> (for sound effects and music).
+    <ol type="a">
+      <li>Open the <code>Processing IDE</code>.</li>
+      <li>Go to <code>Sketch</code> > <code>Import Library</code> > <code>Add Library</code>.</li>
+      <li>In the <code>Library Manager</code>, search for <code>Sound</code> by <code>The Processing Foundation</code> and click <code>Install</code>.</li>
+    </ol>
+  </li>
+  <li>Clone the <code>repository</code> to your device.
+    <ol type="a">
+      <li>Create a <code>folder</code> where you'd like the game to be stored (for example, <code>Documents/Monotony</code>)</li>
+      <li>Right-click the folder and select <code>Open in Terminal</code>.</li>
+      <li>Enter the command <code>git clone https://github.com/MouseMouse625/Monotony</code> to <strong>clone</strong> the <code>repository</code>.</li>
+    </ol>
+  </li>
+  <li>Running the game in <code>VSCode</code>.
+    <ol type="a">
+      <li>Open the <code>cloned folder</code> in <code>VSCode</code> by going to <code>File</code> > <code>Open Folder</code> and selecting the correct <code>folder</code>.</li>
+      <li>Press the <code>play</code> button in the <strong>top-right hand corner</strong> of the screen while having any of the <code>.pde files</code> open.</li>
+    </ol>
+  </li>
+</ol>
 
 ### Comparision
 
-VSCode Version
--   Harder to setup
--   Better anti-alising as it detects app scaling
--   More optimised (less lag)
-
-Processing Version
--   Easier to setup
--   Worse anti-aliasing due to unability to detect app scaling
--   Less optimised due to the native IDE not being the best (more lag)
+<table>
+  <tr>
+    <th>Codebase</th>
+    <th>Executable</th>
+  </tr>
+  <tr>
+    <td>More dependencies</td>
+    <td>Standalone</td>
+  </tr>
+  <tr>
+    <td>Better anti-aliasing</td>
+    <td>Worse anti-aliasing</td>
+  </tr>
+  <tr>
+    <td>Editable</td>
+    <td>Version-locked</td>
+  </tr>
+  <tr>
+    <td>Slower startup</td>
+    <td>Faster startup</td>
+  </tr>
+  <tr>
+    <td>Smaller file size</td>
+    <td>Larger file size</td>
+  </tr>
+  <tr>
+    <td>Editable</td>
+    <td>Version-locked</td>
+  </tr>
+</table>
 
 ## Contributions
 
