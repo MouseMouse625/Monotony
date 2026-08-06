@@ -32,8 +32,7 @@ void setColours(boolean initialised) {
       mountain2Colour = color(60, 0, 80);
       mountain3Colour = color(90, 0, 120);
       mountain4Colour = color(120, 0, 160);
-      skyTopColour = color(0, 0, 10);
-      skyBottomColour = color(100, 0, 130);
+      skyColour = color(100, 0, 130);
     } else if (theme == "light") {
       backgroundColour = color(240, 240, 245);
       playerColour = color(40, 40, 50);
@@ -44,8 +43,7 @@ void setColours(boolean initialised) {
       mountain2Colour = color(210, 210, 220);
       mountain3Colour = color(200, 200, 210);
       mountain4Colour = color(190, 190, 200);
-      skyTopColour = color(220, 230, 240);
-      skyBottomColour = color(240, 240, 245);
+      skyColour = color(240, 240, 245);
     } else if (theme == "dark") {
       backgroundColour = color(15);
       playerColour = color(255);
@@ -56,8 +54,7 @@ void setColours(boolean initialised) {
       mountain2Colour = color(20);
       mountain3Colour = color(30);
       mountain4Colour = color(40);
-      skyTopColour = color(0);
-      skyBottomColour = color(15);
+      skyColour = color(15);
     } else if (theme == "greyscale") {
       backgroundColour = color(95);
       playerColour = color(225);
@@ -68,8 +65,7 @@ void setColours(boolean initialised) {
       mountain2Colour = color(55);
       mountain3Colour = color(75);
       mountain4Colour = color(95);
-      skyTopColour = color(50 / 3);
-      skyBottomColour = color(40);
+      skyColour = color(40);
       } else if (theme == "default") {
       backgroundColour = color(85, 95, 105);
       playerColour = color(215, 225, 235);
@@ -80,8 +76,7 @@ void setColours(boolean initialised) {
       mountain2Colour = color(45, 55, 65);
       mountain3Colour = color(65, 75, 85);
       mountain4Colour = color(85, 95, 105);
-      skyTopColour = color(10, 15, 25);
-      skyBottomColour = color(30, 40, 50);
+      skyColour = color(30, 40, 50);
     } else if (theme == "sunset") {
       backgroundColour = color(240, 180, 120);
       playerColour = color(255, 240, 180);
@@ -92,8 +87,7 @@ void setColours(boolean initialised) {
       mountain2Colour = color(180, 80, 60);
       mountain3Colour = color(200, 90, 70);
       mountain4Colour = color(220, 100, 80);
-      skyTopColour = color(40, 20, 60);
-      skyBottomColour = color(240, 130, 90);
+      skyColour = color(240, 130, 90);
     } else if (theme == "forest") {
       backgroundColour = color(100, 130, 90);
       playerColour = color(230, 240, 210);
@@ -104,8 +98,7 @@ void setColours(boolean initialised) {
       mountain2Colour = color(50, 70, 40);
       mountain3Colour = color(60, 80, 50);
       mountain4Colour = color(70, 90, 60);
-      skyTopColour = color(20, 40, 30);
-      skyBottomColour = color(80, 110, 90);
+      skyColour = color(80, 110, 90);
     } else if (theme == "ice") {
       backgroundColour = color(200, 220, 240);
       playerColour = color(30, 50, 80);
@@ -116,8 +109,7 @@ void setColours(boolean initialised) {
       mountain2Colour = color(190, 210, 230);
       mountain3Colour = color(200, 220, 240);
       mountain4Colour = color(210, 230, 250);
-      skyTopColour = color(180, 200, 220);
-      skyBottomColour = color(210, 230, 250);
+      skyColour = color(210, 230, 250);
     }
     if (initialised) {
       mountain1.rangeColor = mountain1Colour;

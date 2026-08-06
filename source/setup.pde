@@ -1701,6 +1701,7 @@ void setup() {
   setColours(true);
   backdrop();
   fullScreen();
+  pixelDensity(2);
   textAlign(CENTER);
   rectMode(CENTER);
   ellipseMode(CENTER);

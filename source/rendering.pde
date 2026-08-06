@@ -57,10 +57,9 @@ void fade(int speed) {
 }
 void backdrop() {
   beginShape();
-  fill(skyTopColour);
+  fill(skyColour);
   vertex(0, 0);
   vertex(displayWidth, 0);
-  fill(skyBottomColour);
   vertex(displayWidth, displayHeight);
   vertex(0, displayHeight);
   endShape();
