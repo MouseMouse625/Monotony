@@ -2,6 +2,22 @@ class Button extends Sprite {
   int btnRow;
   int btnCol;
   int transitionFrames = 10;
+  PFont btnF;
+  color prevBC;
+  color bgC;
+  color hoverBC;
+  color currentBC;
+  color targetBC;
+  color prevTC;
+  color textC;
+  color hoverTC;
+  color currentTC;
+  color targetTC;
+  color prevSC;
+  color strokeC;
+  color hoverSC;
+  color currentSC;
+  color targetSC;
   float transitionProgress;
   float btnX;
   float btnY;
@@ -26,26 +42,10 @@ class Button extends Sprite {
   float lockHeight;
   float shackleHeight;
   float shackleWidth;
-  color prevBC;
-  color bgC;
-  color hoverBC;
-  color currentBC;
-  color targetBC;
-  color prevTC;
-  color textC;
-  color hoverTC;
-  color currentTC;
-  color targetTC;
-  color prevSC;
-  color strokeC;
-  color hoverSC;
-  color currentSC;
-  color targetSC;
-  PFont btnF;
   PImage displayImg;
   String btnT;
-  String prevState = "";
-  String state = "";
+  String prevState = "default";
+  String state = "default";
   boolean btnL;
   boolean sectionUpdated;
   Button(float x, float y, float w, float h, String t, float s, boolean l) {
@@ -57,9 +57,7 @@ class Button extends Sprite {
   Button(float x, float y, float w, float h, float r, String t, PFont f, float s, boolean l) {
     super(x, y, w - (blockSize * 0.625), h - (blockSize * 0.625), r, color(0), false);
     this.normalW = w;
-    this.currentW = this.normalW - this.expandA;
     this.normalH = h;
-    this.currentH = this.normalH - this.expandA;
     this.btnR = r;
     this.btnF = f;
     this.btnT = t;
@@ -79,6 +77,13 @@ class Button extends Sprite {
     this.currentBC = color(backgroundColour, 0);
     this.currentTC = color(playerColour, alpha);
     this.currentSC = color(playerColour, alpha);
+    this.prevBC = this.currentBC;
+    this.prevTC = this.currentTC;
+    this.prevSC = this.currentSC;
+    this.prevSW = this.currentSW;
+    this.prevW = this.currentW;
+    this.prevH = this.currentH;
+    this.prevTS = this.currentTS;
     this.lockWidth = blockSize * 0.8;
     this.lockHeight = halfBlockSize * 1.2;
     this.shackleHeight = halfBlockSize * 0.8;
@@ -139,11 +144,15 @@ class Button extends Sprite {
   void updateCommonProperties() {
     this.btnX = this.spriteX;
     this.btnY = this.spriteY;
+    this.bgC = color(backgroundColour, 0); 
     this.hoverBC = color(playerColour, alpha);
     this.textC = color(playerColour, alpha);
     this.hoverTC = color(backgroundColour, alpha);
     this.strokeC = color(playerColour, alpha);
     this.hoverSC = color(backgroundColour, 0);
+    this.targetBC = this.bgC;
+    this.targetTC = this.textC;
+    this.targetSC = this.strokeC;
   }
   void displayDefault() {
     fill(this.currentBC);
@@ -184,8 +193,8 @@ class Button extends Sprite {
   }
   void display() {
     this.updateState();
-    this.updateVisualProperties();
     this.updateCommonProperties();
+    this.updateVisualProperties();
     switch(this.state) {
       case "default":
         this.displayDefault();

@@ -1,10 +1,10 @@
 class Sprite {
+  color spriteC;
   float spriteX;
   float spriteY;
   float spriteW;
   float spriteH;
   float spriteR;
-  color spriteC;
   boolean alphaDep;
   Sprite(float x, float y, float w, float h, float r, color c, boolean d) {
     this.spriteX = x;
@@ -18,6 +18,8 @@ class Sprite {
   void display() {
     if (this.alphaDep) {
       fill(spriteC, alpha);
+    } else {
+      fill(spriteC);
     }
     rect(this.spriteX, this.spriteY, this.spriteW, this.spriteH, this.spriteR);
   }

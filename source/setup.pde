@@ -235,6 +235,7 @@ void setup() {
   sunsetButton = new Button(centerX, blockSize * 32.625, blockSize * 15, blockSize * 3.5, "Sunset", blockSize * 2.25, false);
   forestButton = new Button(centerX, blockSize * 36.375, blockSize * 15, blockSize * 3.5, "Forest", blockSize * 2.25, false);
   iceButton = new Button(centerX, blockSize * 40.125, blockSize * 15, blockSize * 3.5, "Ice", blockSize * 2.25, false);
+  nextSection = new PVector(0, 0); 
   tutorial1Shown = false;
   tutorial2Shown = false;
   tutorial3Shown = false;
