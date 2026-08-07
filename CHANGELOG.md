@@ -4,6 +4,7 @@
 
 ### Added
 
+- A CHANGELOG.md file (this one!)
 - settings.json for VSCode file nesting
 - All the blur sections to the images folder (to function as a default seed, an upcoming feature)
 
