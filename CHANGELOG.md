@@ -23,6 +23,10 @@
 - Fixed the data import paths due to the removal of the main folder
 - Fixed the achievements having overlapping coordinates
 - Fixed various other typos in the coordinates of a multitude of sprites
+- Restructured the code and optimised several 
+    - Matched the declaration-initialisation order
+    - Automation of using the next section
+    - Improved the structure of several classes to prevent bugs caused by future restructurings
 
 ## v1.0.0
 

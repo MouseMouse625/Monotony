@@ -33,7 +33,7 @@ void mousePressed() {
           buttonClick.play();
         }
       } else if (hoverCheck(exitButton)) {
-        targetLevel = "exit";
+        exit();
         if (buttonClickCheckbox.getState() == "checked") {
           buttonClick.play();
         }
