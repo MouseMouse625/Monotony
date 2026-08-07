@@ -23,6 +23,7 @@
 - Fixed the data import paths due to the removal of the main folder
 - Fixed the achievements having overlapping coordinates
 - Fixed various other typos in the coordinates of a multitude of sprites
+- Fixed the malfunctioning exit button
 - Restructured the code and optimised several 
     - Matched the declaration-initialisation order
     - Automation of using the next section
