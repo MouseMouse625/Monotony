@@ -47,19 +47,15 @@ class Button extends Sprite {
   String prevState = "";
   String state = "";
   boolean btnL;
+  boolean sectionUpdated;
   Button(float x, float y, float w, float h, String t, float s, boolean l) {
-    this(-1, -1, x, y, w, h, blockSize * 0.45, t, s, l);
+    this(x, y, w, h, blockSize * 0.45, t, s, l);
   }
-  Button(int row, int col, float x, float y, float w, float h, String t, float s, boolean l) {
-    this(row, col, x, y, w, h, blockSize * 0.45, t, s, l);
+  Button(float x, float y, float w, float h, float r, String t, float s, boolean l) {
+    this(x, y, w, h, r, t, benchNineLight, s, l);
   }
-  Button(int row, int col, float x, float y, float w, float h, float r, String t, float s, boolean l) {
-    this(row, col, x, y, w, h, r, t, benchNineLight, s, l);
-  }
-  Button(int row, int col, float x, float y, float w, float h, float r, String t, PFont f, float s, boolean l) {
+  Button(float x, float y, float w, float h, float r, String t, PFont f, float s, boolean l) {
     super(x, y, w - (blockSize * 0.625), h - (blockSize * 0.625), r, color(0), false);
-    this.btnRow = row;
-    this.btnCol = col;
     this.normalW = w;
     this.currentW = this.normalW - this.expandA;
     this.normalH = h;
@@ -166,13 +162,16 @@ class Button extends Sprite {
     this.displayDefault();
   }
   void displayLocked() {
-    if (btnRow >= 0 && btnCol >= 0) {
-      displayImg = sections[this.btnRow][this.btnCol].copy();
-      displayImg.resize((int)this.currentW, (int)this.currentH);
-      tint(255, alpha);
-      image(displayImg, this.btnX, this.btnY);
-      noClip();
+    if (!sectionUpdated) {
+      sectionUpdated = true;
+      updateNextSection();
+      this.btnRow = (int)nextSection.x;
+      this.btnCol = (int)nextSection.y;
     }
+    displayImg = sections[this.btnRow][this.btnCol].copy();
+    displayImg.resize((int)this.currentW, (int)this.currentH);
+    tint(255, alpha);
+    image(displayImg, this.btnX, this.btnY);
     noFill();
     stroke(this.strokeC);
     strokeWeight(blockSize * 0.15);

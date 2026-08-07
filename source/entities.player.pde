@@ -9,8 +9,8 @@ class Player extends Sprite {
   PVector recentTrail = new PVector();
   PVector jumpOrigin = new PVector();
   Polygon hexagon;
-  ArrayList<PVector> drawnPositions = new ArrayList<PVector>();
-  ArrayList<PVector> trailArray = new ArrayList<PVector>();
+  ArrayList<PVector> drawnPositions = new ArrayList<>();
+  ArrayList<PVector> trailArray = new ArrayList<>();
   Player() {
     super(playerX, playerY, blockSize, blockSize, blockRadius, color(playerColour), true);
     hexagon = new Polygon(0, 0, 0, 6);

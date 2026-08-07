@@ -22,23 +22,26 @@ class Achievement extends Sprite {
   String achTitle;
   String achSubtitle;
   boolean achL;
-  PGraphics mask;
-  Achievement(int row, int col, float x, float y, String t, String st, boolean l) {
-    this(row, col, x, y, blockSize * 18, blockSize * 5, halfBlockSize, t, st, l);
+  Achievement(int row, int col, String t, String st, boolean l) {
+    this(-7.3 + row * blockSize * 18.25, 2.225 + col * blockSize * 5.25, t, st, l);
   }
-  Achievement(int row, int col, float x, float y, float w, float h, String t, String st, boolean l) {
-    this(row, col, x, y, w, h, halfBlockSize, t, st, l);
+  Achievement(float x, float y, String t, String st, boolean l) {
+    this(x, y, blockSize * 18, blockSize * 5, t, st, l);
   }
-  Achievement(int row, int col, float x, float y, float w, float h, float r, String t, String st, boolean l) {
-    this(row, col, x, y, w, h, r, t, st, w * 0.1, h * 0.2, l);
+  Achievement(float x, float y, float w, float h, String t, String st, boolean l) {
+    this(x, y, w, h, halfBlockSize, t, st, l);
   }
-  Achievement(int row, int col, float x, float y, float w, float h, float r, String t, String st, float ts, float sts, boolean l) {
-    this(row, col, x, y, w, h, r, t, st, ts, sts, benchNineLight, l);
+  Achievement(float x, float y, float w, float h, float r, String t, String st, boolean l) {
+    this(x, y, w, h, r, t, st, w * 0.1, h * 0.2, l);
   }
-  Achievement(int row, int col, float x, float y, float w, float h, float r, String t, String st, float ts, float sts, PFont f, boolean l) {
+  Achievement(float x, float y, float w, float h, float r, String t, String st, float ts, float sts, boolean l) {
+    this(x, y, w, h, r, t, st, ts, sts, benchNineLight, l);
+  }
+  Achievement(float x, float y, float w, float h, float r, String t, String st, float ts, float sts, PFont f, boolean l) {
     super(x, y, w, h, r, color(0), false);
-    this.achRow = row;
-    this.achCol = col;
+    updateNextSection();
+    this.achRow = (int)nextSection.x;
+    this.achCol = (int)nextSection.y;
     this.achX = x;
     this.achY = y;
     this.achW = w;
@@ -75,18 +78,10 @@ class Achievement extends Sprite {
     }
   }
   void displayLocked() {
-    mask = createGraphics((int)this.achW, (int)this.achH);
-    mask.beginDraw();
-    mask.background(0);
-    mask.fill(255);
-    mask.rect(0, 0, this.achW, this.achH, this.achR);
-    mask.endDraw();
     displayImg = sections[this.achRow][this.achCol].copy();
     displayImg.resize((int)this.achW, (int)this.achH);
-    displayImg.mask(mask);
     tint(255, alpha);
     image(displayImg, this.achX, this.achY);
-    noClip();
     noFill();
     stroke(this.strokeC);
     strokeWeight(blockSize * 0.15);

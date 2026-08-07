@@ -157,27 +157,17 @@ int getLevel(String levelString) {
     }
   }
 }
-int getTheme(String themeString) {
-  switch(themeString) {
-    case "cyberpunk":
-      return 0;
-    case "light":
-      return 1;
-    case "dark":
-      return 2;
-    case "greyscale":
-      return 3;
-    case "default":
-      return 4;
-    case "sunset":
-      return 5;
-    case "forest":
-      return 6;
-    case "ice":
-      return 7;
-    default:
-      return -1;
+void updateNextSection() {
+  for (int row = 0; row < 5; row++) {
+    for (int col = 0; col < 8; col++) {
+      if (!sectionsUsed[row][col]) {
+        sectionsUsed[row][col] = true;
+        nextSection.set(row, col);
+        return;
+      }
+    }
   }
+  nextSection.set(-1, -1);
 }
 void levelA(LevelClearArea levelNClearArea, ArrayList<Sprite> levelNSprites) {
   levelTitle();

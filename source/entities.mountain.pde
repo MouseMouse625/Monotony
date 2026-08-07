@@ -11,9 +11,9 @@ class Mountain {
   float transitionProgress = 1;
   color rangeColor;
   String currentLevel = level;
-  ArrayList<PVector> originalPoints = new ArrayList<PVector>();
-  ArrayList<PVector> currentPoints = new ArrayList<PVector>();
-  ArrayList<PVector> targetPoints = new ArrayList<PVector>();
+  ArrayList<PVector> originalPoints = new ArrayList<>();
+  ArrayList<PVector> currentPoints = new ArrayList<>();
+  ArrayList<PVector> targetPoints = new ArrayList<>();
   Mountain(float yBs, float parallaxX, float parallaxY, color colour, float variation, float seed) {
     this.yBase = yBs;
     this.parallaxFactorX = parallaxX;
